@@ -1,0 +1,10 @@
+.header{
+    background-color: #88df55;
+    display: flex  ;
+align-items: center;
+
+}
+img{
+    width: 100px;
+    height: 100px;
+}
