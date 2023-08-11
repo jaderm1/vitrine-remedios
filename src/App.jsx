@@ -2,6 +2,8 @@ import { useState } from 'react'
 
 import './App.css'
 
+import { MedicamentosContextProvider } from './context/MedicamentosContext'
+
 
 import FormularioNovoMedicamento from './components/FormularioNovoMedicamento'
 
@@ -11,9 +13,12 @@ function App() {
 
   return (
     <>
-      <Header/>
-      <FormularioNovoMedicamento/>
+       <Header />
+      <MedicamentosContextProvider>
      
+        <FormularioNovoMedicamento />
+
+      </MedicamentosContextProvider>
     </>
   )
 }
